@@ -9,13 +9,17 @@ void max_Ones(vector<int> arr){
 for(int i=0;i<arr.size();i++){
     if(arr[i]==1){
       cnt++;
-    } 
+    }
+    //this last part could have been done using else 
+    
     if(arr[i]==0 || i==arr.size()-1){ //this condition is the main part
         if(cnt>max) max=cnt;
 
         cnt=0;
 
     } 
+    // else{cnt=0; }  max=Math.max(cnt,max)
+
 }
 cout<<max;
 }
